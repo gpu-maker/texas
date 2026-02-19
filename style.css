@@ -1,0 +1,77 @@
+body{
+  margin:0;
+  background:#0b0b0b;
+  font-family:arial;
+  color:white;
+}
+
+#table{
+  width:100vw;
+  height:100vh;
+  background:radial-gradient(circle,#0f6d2c,#063d17);
+  border-radius:50%;
+  position:relative;
+}
+
+/* players */
+
+.player{
+  position:absolute;
+  text-align:center;
+}
+
+.cards{
+  display:flex;
+  gap:10px;
+}
+
+/* cards */
+
+.card{
+  width:80px;
+  height:120px;
+  border-radius:10px;
+  background-size:cover;
+  transform-style:preserve-3d;
+  transition:transform .6s cubic-bezier(.2,.8,.2,1);
+}
+
+.card.flip{
+  transform:rotateY(180deg);
+}
+
+/* chips */
+
+.chip{
+  width:36px;
+  height:36px;
+  background-size:contain;
+  position:absolute;
+  transition:all .5s ease;
+}
+
+#community{
+  position:absolute;
+  top:40%;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  gap:15px;
+}
+
+#pot{
+  position:absolute;
+  top:52%;
+  left:50%;
+  transform:translateX(-50%);
+  font-size:22px;
+}
+
+#dealer{
+  width:40px;
+  height:40px;
+  background:url("assets/dealer.png");
+  background-size:cover;
+  position:absolute;
+  transition:.6s ease;
+}
