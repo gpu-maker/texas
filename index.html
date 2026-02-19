@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Texas Hold'em</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="table">
+
+  <div id="dealer"></div>
+
+  <div id="players"></div>
+
+  <div id="community"></div>
+
+  <div id="pot">$0</div>
+
+  <div id="controls">
+    <button onclick="game.playerAction('call')">Call</button>
+    <button onclick="game.playerAction('raise')">Raise</button>
+    <button onclick="game.playerAction('fold')">Fold</button>
+  </div>
+
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
